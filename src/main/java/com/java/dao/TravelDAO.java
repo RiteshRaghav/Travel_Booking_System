@@ -10,11 +10,10 @@ public class TravelDAO {
 	private String jdbcPassword="1234";
 	
 	private static final String INSERT_USER_SQL="INSERT INTO users"+"(UserName,Email,paswd,country) VALUES "+" (?,?,?,?)";
-	private static final String SELECT_USER_BY_NAME="SELECT * FROM users where UserName=?";
+	private static final String SELECT_USER_BY_ID="SELECT * FROM users where Id=?";
 	private static final String SELECT_ALL_USER="SELECT * FROM users";
-	private static final String DELETE_USER_SQL="delete from users where UserName=?";
-	private static final String UPDATE_USERS_SQL="update users set UserName=?,Email=?,paswd=?,country=?  where UserName=?";
-	
+	private static final String DELETE_USER_SQL="delete from users where Id=?";
+	private static final String UPDATE_USERS_SQL="update users set UserName=?,Email=?,paswd=?,country=?  where Id=?";	
 	
 	public TravelDAO() {
 		
@@ -55,13 +54,13 @@ public class TravelDAO {
 			e.printStackTrace();
 		}
 	}
-	public user selectUser(String UserName) {
+	public user selectUser(int Id) {
 		user user=new user();
 		
 		TravelDAO dao=new TravelDAO();
 		try(Connection connection=dao.getConnection()){
-			PreparedStatement preparedStatement=connection.prepareStatement(SELECT_USER_BY_NAME);
-			preparedStatement.setString(1, UserName);
+			PreparedStatement preparedStatement=connection.prepareStatement(SELECT_USER_BY_ID);
+			preparedStatement.setInt(1, Id);
 			
 			ResultSet resultSet=preparedStatement.executeQuery();
 			user.setUserName(resultSet.getString("UserName"));
@@ -82,6 +81,7 @@ public class TravelDAO {
 			ResultSet resultSet=preparedStatement.executeQuery();
 			
 			while(resultSet.next()) {
+				int Id=resultSet.getInt("Id");
 				String UserName=resultSet.getString("UserName");
 				String Email=resultSet.getString("Email");
 				String paswd=resultSet.getString("paswd");
@@ -97,12 +97,12 @@ public class TravelDAO {
 		return users;
 		
 	}
-	public boolean deleteUser(String UserName) {
+	public boolean deleteUser(int Id) {
 		boolean status =false ;
 		TravelDAO dao=new TravelDAO();
 		try(Connection connection=dao.getConnection()){
 			PreparedStatement preparedStatement=connection.prepareStatement(DELETE_USER_SQL);
-			preparedStatement.setString(1,UserName);
+			preparedStatement.setInt(1,Id);
 			
 			status=preparedStatement.execute();
 			
@@ -147,9 +147,9 @@ public class TravelDAO {
 			System.out.println("problem in database connection");
 		}
 		user user=new user("raghav","raghav@abc","1234","India");
-		//dao.insertUser(user);
-		user user1=dao.selectUser("raghav");
-		System.out.println(user1);
+		dao.insertUser(user);
+		//user user1=dao.selectUser("raghav");
+		//System.out.println(user1);
 	}
 	
 

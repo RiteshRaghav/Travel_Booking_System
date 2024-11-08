@@ -1,6 +1,7 @@
 package com.java.model;
 
 public class user {
+	private int Id;
 	private String UserName;
 	private String Email;
 	private String paswd;
@@ -10,6 +11,7 @@ public class user {
 		
 	}
 	public user(String UserName,String Email,String paswd,String country) {
+		
 		this.UserName=UserName;
 		this.Email=Email;
 		this.paswd=paswd;
@@ -40,6 +42,7 @@ public class user {
 	public void setCountry(String country) {
 		this.country = country;
 	}
+	
 	
 	
 }
