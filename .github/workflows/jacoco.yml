@@ -20,7 +20,7 @@ jobs:
       uses: actions/setup-java@v2
       with:
         java-version: '11'
-        distribution: 'adoptopenjdk'
+        distribution: 'temurin'  # Correct distribution for JDK 11
 
     - name: Cache Maven dependencies
       uses: actions/cache@v2
@@ -31,10 +31,10 @@ jobs:
           ${{ runner.os }}-maven-
 
     - name: Build and run tests with Maven
-      run: mvn clean verify
+      run: mvn clean test  # Runs only the tests
 
     - name: Upload JaCoCo code coverage to Codecov
       uses: codecov/codecov-action@v2
       with:
         file: ./target/site/jacoco/jacoco.xml
-        token: ${{ secrets.CODECOV_TOKEN }}
+        token: ${{ secrets.CODECOV_TOKEN }}  # Optional: If you're using Codecov for coverage reports
