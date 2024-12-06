@@ -15,4 +15,15 @@ let menu_bx = document.getElementById('menu_bx');
 menu_btn.addEventListener('click', ()=>{
     menu_bx.classList.toggle('ul_active');
 })
+function login(){
+    const username=document.getElementById('email').value;
+    const password=document.getElementById('password').value;
+    
+    if(username==='ayush12@gmail.com'&& password ==='12345'){//default we cange after DB connection
+        window.location.href="index.html";
+    }
+    else{
+        alert("invalid credentials")
+    }
 
+}

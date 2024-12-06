@@ -10,31 +10,42 @@
 </head>
 <body>
     <div class="container">
-        <h1> Login</h1>
-        
-        <form action="#" method="POST">
-            
-            
+    <h2>Login Form</h2>
+    <form id="loginForm">
+        <label for="email">Username:</label>
+        <input type="text" id="email" name="email" required>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <button type="button" onclick="login()">Login</button>
+    </form>
 
-            <!-- Email -->
-            <div class="form-group">
-                <label for="email">Email Address:</label>
-                <input type="email" id="email" name="email" placeholder="Enter your email" required>
-            </div>
+    <a  class="signup" href="signup.jsp">Register</a>
+    <a  class="forget" href="forgotPass.jsp">Forget Password</a>
+</div>
 
-            <!-- Password -->
-            <div class="form-group">
-                <label for="password">Password:</label>
-                <input type="password" id="password" name="password" placeholder="Create a password" required>
-            </div>
-            <button type="submit">
-                <a href="index.jsp">Login</a>
-            </button>
-        </form>
+    <script>
+        function login() {
+            const username = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+
+            // Simulating a successful login (replace with an actual API call)
+            if (username === "ayush12@gmail.com" && password === "1234") {
+                
+                window.location.href = "index.jsp"; // Redirect to index page
+            } 
+            else if (username==="" || password===""){
+                 alert("please fill the username and password ! ");
+            }
+            else {
+                alert("Invalid Credentials");
+            }
+        }
+    </script>
     
-        <a  class="signup" href="signup.jsp">Register</a>
-        <a  class="forget" href="forgotPass.jsp">Forget Password</a>
+        
     </div>
+
+    
     
 </body>
 </html>

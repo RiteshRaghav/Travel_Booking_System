@@ -18,10 +18,10 @@
         <nav>
             <h4>WonderWave Travels</h4>
             <ul id="menu_bx">
-                <li><a href="#">Discover</a></li>
+                <li><a href="#discover">Discover</a></li>
                 <li><a href="#">Coummunity</a></li>
                 <li><a href="#">Special Deals</a></li>
-                <li><a href="components/aboutUs.html">About US</a></li>
+                <li><a href="#about">About US</a></li>
                 <li><a href="signup.jsp">Register</a></li>
                 <li><a href="login.jsp">login</a></li>
 
@@ -90,7 +90,7 @@
             </div>
         </div>
     </header>
-    <div class="offers">
+    <div class="offers" id="discover">
         <h1>Best tour Package offers for You</h1>
         <p>choose your next destination</p>
         <div class="cards">
@@ -108,7 +108,7 @@
                         </div>
                         <div class="info_price">
                             <a href="">More Info</a>
-                            <h4>648k</h4>
+                            <h4>$2648</h4>
                         </div>
                     </div>
                     <div class="dayes">5 Days <br> India</div>
@@ -128,7 +128,7 @@
                         </div>
                         <div class="info_price">
                             <a href="">More Info</a>
-                            <h4>248k</h4>
+                            <h4>$2648</h4>
                         </div>
                     </div>
                     <div class="dayes">5 Days <br> Dubai</div>
@@ -148,7 +148,7 @@
                         </div>
                         <div class="info_price">
                             <a href="">More Info</a>
-                            <h4>264k</h4>
+                            <h4>$2648</h4>
                         </div>
                     </div>
                     <div class="dayes">7 Days <br> Egypt</div>
@@ -168,7 +168,7 @@
                         </div>
                         <div class="info_price">
                             <a href="">More Info</a>
-                            <h4>268k</h4>
+                            <h4>$2648</h4>
                         </div>
                     </div>
                     <div class="dayes">7 Days <br> Veitna</div>
@@ -213,6 +213,24 @@
             </div>
         </div>
     </div>
+
+
+     <!-- about -->
+    <div class="about" id="about">
+        <h1>About Us</h1>
+
+        <h2>Welcome to WonderWave Travels!</h2>
+        <p>At WonderWave Travels, we believe that every journey is a unique opportunity to explore, discover, and connect with the world around us. Founded with a passion for travel and a deep understanding of what makes a trip memorable, we are here to turn your travel dreams into reality.</p>
+
+       
+        <h2>Why Choose Us?</h2>
+        <ul>
+            <li><strong>Personalized Service</strong>: We listen to your travel preferences and craft a trip that matches your style, interests, and budget.</li>
+            <li><strong>Expert Knowledge</strong>: Our team of experienced travel professionals has in-depth knowledge of destinations, hidden gems, and travel tips to ensure a seamless journey.</li>
+            <li><strong>Trustworthy & Reliable</strong>: We work with a network of trusted partners to offer you the best deals on flights, accommodations, and experiences.</li>
+            <li><strong>24/7 Support</strong>: No matter where you are, we’re always just a phone call or email away to assist you with any questions or concerns.</li>
+        </ul>
+    </div>    
 
     <footer>
         <h2>Subscribe & <br> get special discount</h2>

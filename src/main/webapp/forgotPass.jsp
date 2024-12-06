@@ -16,7 +16,7 @@
     
     <form action="/submit-forgot-password" method="POST">
         <label for="email">Email:</label>
-        <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+        <input type="email" id="email" name="email" placeholder="Enter your email address" required> 
         
         <input type="submit" value="Submit">
     </form>
