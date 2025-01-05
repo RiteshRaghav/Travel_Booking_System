@@ -19,7 +19,7 @@
             <h4>WonderWave Travels</h4>
             <ul id="menu_bx">
                 <li><a href="#discover">Discover</a></li>
-                <li><a href="#">Coummunity</a></li>
+                <li><a href="footer">Contact us</a></li>
                 <li><a href="#">Special Deals</a></li>
                 <li><a href="#about">About US</a></li>
                 <li><a href="signup.jsp">Register</a></li>
