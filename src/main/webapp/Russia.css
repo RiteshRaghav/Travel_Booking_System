@@ -1,0 +1,82 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    height: 100vh;
+    width: 100%;
+}
+#heading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3vw;
+}
+#container{
+    margin: 4vw;
+    margin-right: 4vw;
+    height: 300px;
+    width: 100%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+   
+}
+#img{
+    height: 260px;
+    width: 400px;
+    background-color: blueviolet;
+    background-image: url(https://media2.thrillophilia.com/images/photos/000/370/681/original/1617255651_483530873_medium.jpg?w=753&h=450&dpr=1.5);
+    background-size: cover;
+    background-position: top;
+    
+}
+#about{
+    width: 40%;
+    
+}
+#about h2{
+    font-size: 2.2vw;
+    padding-bottom: 2vw;
+}
+#about p{
+    font-size: 1.5vw;
+    font-weight: 300;
+}
+
+#img1{
+    height: 260px;
+    width: 400px;
+    background-color: blueviolet;
+    background-image: url(https://media2.thrillophilia.com/images/photos/000/370/685/original/1617256085_Golden-Ring.jpg?w=753&h=450&dpr=1.5);
+    background-size: cover;
+    background-position: center;
+    
+    
+}
+#img2{
+    height: 260px;
+    width: 400px;
+    background-color: blueviolet;
+    background-image: url(https://media2.thrillophilia.com/images/photos/000/370/686/original/1617256163_Curonian_Spit_NP_05-2017_img17_aerial_view_at_Epha_Dune.jpg?w=753&h=450&dpr=1.5);
+    background-size: cover;
+    background-position: center;
+    
+    
+}
+#img3{
+    height: 260px;
+    width: 400px;
+    background-color: blueviolet;
+    background-image: url(https://media2.thrillophilia.com/images/photos/000/370/693/original/1617257396_4c38641d0cdec13176caa8b478afabca.jpg?w=753&h=450&dpr=1.5);
+    background-size: cover;
+    background-position: center;
+    
+    
+}

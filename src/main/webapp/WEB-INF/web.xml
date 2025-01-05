@@ -4,4 +4,30 @@
 
 <web-app>
 	<display-name>Archetype Created Web Application</display-name>
+	
+	
+	<servlet>
+		<servlet-name>loginservlet</servlet-name>
+		<display-name>loginservlet</display-name>
+		<description></description>
+		<servlet-class>com.java.servlet.loginservlet</servlet-class>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>registerServlet</servlet-name>
+		<display-name>registerServlet</display-name>
+		<description></description>
+		<servlet-class>com.java.servlet.registerServlet</servlet-class>
+	</servlet>
+	
+	
+	<servlet-mapping>
+		<servlet-name>loginservlet</servlet-name>
+		<url-pattern>/loginservlet</url-pattern>
+	</servlet-mapping>
+	
+	<servlet-mapping>
+		<servlet-name>registerServlet</servlet-name>
+		<url-pattern>/registerServlet</url-pattern>
+	</servlet-mapping>
 </web-app>

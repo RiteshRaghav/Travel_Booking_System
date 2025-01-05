@@ -19,7 +19,7 @@
             <h4>WonderWave Travels</h4>
             <ul id="menu_bx">
                 <li><a href="#discover">Discover</a></li>
-                <li><a href="#">Coummunity</a></li>
+                <li><a href="footer">Contact us</a></li>
                 <li><a href="#">Special Deals</a></li>
                 <li><a href="#about">About US</a></li>
                 <li><a href="signup.jsp">Register</a></li>
@@ -57,7 +57,7 @@
                             <h3>INDIA <img src="icon/india.png" alt=""></h3>
                             <img src="img/Mumbai-India-at-night.jpg" alt="">
                             <div class="btn_city">
-                                <a href="">Read Now</a>
+                                <a href="India.jsp">Read Now</a>
                                 <h5>Mumbai Central <br> <span>8.6k</span></h5>
                             </div>
                         </div>
@@ -65,7 +65,7 @@
                             <h3>UNITED STATE <img src="icon/united-states.png" alt=""></h3>
                             <img src="img/newyork.webp" alt="">
                             <div class="btn_city">
-                                <a href="">Read Now</a>
+                                <a href="US.jsp">Read Now</a>
                                 <h5>NewYork <br> <span>87k</span></h5>
                             </div>
                         </div>
@@ -73,7 +73,7 @@
                             <h3>RUSSIA <img src="icon/russia.png" alt=""></h3>
                             <img src="img/sanpitersburg.jpg" alt="">
                             <div class="btn_city">
-                                <a href="">Read Now</a>
+                                <a href="Russia.jsp">Read Now</a>
                                 <h5>Sanpitersburg <br> <span>66k</span></h5>
                             </div>
                         </div>
@@ -81,7 +81,7 @@
                             <h3>SPAIN <img src="icon/spain.png" alt=""></h3>
                             <img src="img/barcelona.jpg" alt="">
                             <div class="btn_city">
-                                <a href="">Read Now</a>
+                                <a href="Spain.jsp">Read Now</a>
                                 <h5>Barcelona <br> <span>73k</span></h5>
                             </div>
                         </div>

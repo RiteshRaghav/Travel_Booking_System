@@ -1,0 +1,82 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    height: 100vh;
+    width: 100%;
+}
+#heading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3vw;
+}
+#container{
+    margin: 4vw;
+    margin-right: 4vw;
+    height: 300px;
+    width: 100%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+   
+}
+#img{
+    height: 260px;
+    width: 400px;
+    background-color: blueviolet;
+    background-image: url(https://hblimg.mmtcdn.com/content/hubble/img/Bulk_International/mmt/activities/m_Barcelona_1-min_l_595_1000.jpg);
+    background-size: cover;
+    background-position: top;
+    
+}
+#about{
+    width: 40%;
+    
+}
+#about h2{
+    font-size: 2.2vw;
+    padding-bottom: 2vw;
+}
+#about p{
+    font-size: 1.5vw;
+    font-weight: 300;
+}
+
+#img1{
+    height: 260px;
+    width: 400px;
+    background-color: blueviolet;
+    background-image: url(https://hblimg.mmtcdn.com/content/hubble/img/Bulk_International/mmt/activities/m_Madrid_3-min_l_668_1000.jpg);
+    background-size: cover;
+    background-position: center;
+    
+    
+}
+#img2{
+    height: 260px;
+    width: 400px;
+    background-color: blueviolet;
+    background-image: url(https://hblimg.mmtcdn.com/content/hubble/img/maingalleryimgs/mmt/activities/m_Ibiza_6_l_625_1000.jpg);
+    background-size: cover;
+    background-position: center;
+    
+    
+}
+#img3{
+    height: 260px;
+    width: 400px;
+    background-color: blueviolet;
+    background-image: url(https://travel.usnews.com/dims4/USNEWS/a7cd516/2147483647/resize/976x652%5E%3E/crop/976x652/quality/85/?url=https%3A%2F%2Ftravel.usnews.com%2Fimages%2FCosta_Brava_Girona_Little_Cala_Getty_Silanes_Travel_Photography.jpg);
+    background-size: cover;
+    background-position: center;
+    
+    
+}

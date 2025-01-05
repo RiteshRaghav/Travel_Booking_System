@@ -151,7 +151,29 @@ public class TravelDAO {
 		//user user1=dao.selectUser("raghav");
 		//System.out.println(user1);
 	}
-	
+	public user checkLogin(String Email , String password) {
+	    user user = null;
+	    String sql = "SELECT * FROM users WHERE Email = ? AND paswd = ?";
+	    
+	    try (Connection connection = getConnection();
+	         PreparedStatement preparedStatement = connection.prepareStatement(sql)) {
+	        preparedStatement.setString(1, Email);
+	        preparedStatement.setString(2, password);
+	        
+	        ResultSet resultSet = preparedStatement.executeQuery();
+	        
+	        if (resultSet.next()) {
+	            user = new user();
+	            user.setUserName(resultSet.getString("UserName"));
+	            user.setEmail(resultSet.getString("Email"));
+	            user.setPaswd(resultSet.getString("paswd"));
+	            user.setCountry(resultSet.getString("country"));
+	        }
+	    } catch (SQLException e) {
+	        e.printStackTrace();
+	    }
+	    return user;
+	}
 
 	
 	

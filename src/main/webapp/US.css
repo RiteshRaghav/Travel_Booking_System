@@ -1,0 +1,82 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    height: 100vh;
+    width: 100%;
+}
+#heading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3vw;
+}
+#container{
+    margin: 4vw;
+    margin-right: 4vw;
+    height: 300px;
+    width: 100%;
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+   
+}
+#img{
+    height: 260px;
+    width: 400px;
+    background-color: blueviolet;
+    background-image: url(https://hblimg.mmtcdn.com/content/hubble/img/Miami/mmt/activities/m_Miami_dest_5_l_650_813.jpg);
+    background-size: cover;
+    background-position: top;
+    
+}
+#about{
+    width: 40%;
+    
+}
+#about h2{
+    font-size: 2.2vw;
+    padding-bottom: 2vw;
+}
+#about p{
+    font-size: 1.5vw;
+    font-weight: 300;
+}
+
+#img1{
+    height: 260px;
+    width: 400px;
+    background-color: blueviolet;
+    background-image: url(https://hblimg.mmtcdn.com/content/hubble/img/LasVegas_Cover/mmt/activities/m_Las%20Vegas_2_l_235_352.jpg);
+    background-size: cover;
+    background-position: center;
+    
+    
+}
+#img2{
+    height: 260px;
+    width: 400px;
+    background-color: blueviolet;
+    background-image: url(https://hblimg.mmtcdn.com/content/hubble/img/dest/mmt/activities/m_hawaii_na_pali-4_l_733_1100.jpg);
+    background-size: cover;
+    background-position: center;
+    
+    
+}
+#img3{
+    height: 260px;
+    width: 400px;
+    background-color: blueviolet;
+    background-image: url(https://hblimg.mmtcdn.com/content/hubble/img/tvdestinationimages/mmt/activities/m_NewYork_tv_destination_img_4_l_1097_1646.jpg);
+    background-size: cover;
+    background-position: center;
+    
+    
+}
