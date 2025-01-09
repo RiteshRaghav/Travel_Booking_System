@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="media.css">
     <title>Travel Agency Website</title>
+<style> .cards { position: relative; } .cards .popup { display: none; position: absolute; top: 10px; left: 10px; background-color: rgba(0, 0, 0, 0.8); color: white; padding: 10px; border-radius: 5px; width: 200px; z-index: 1; } .card:hover .popup { display: block; }
+</style>
 </head>
 
 <body>
@@ -57,11 +59,8 @@
                             <h3>INDIA <img src="icon/india.png" alt=""></h3>
                             <img src="img/Mumbai-India-at-night.jpg" alt="">
                             <div class="btn_city">
-<<<<<<< HEAD
                                 <a href="India.jsp">Read Now</a>
-=======
-                                <a href="India.html">Read Now</a>
->>>>>>> 7f8308ff5f838fa13dc27b393b297b7a67c82a09
+                                
                                 <h5>Mumbai Central <br> <span>8.6k</span></h5>
                             </div>
                         </div>
@@ -69,11 +68,7 @@
                             <h3>UNITED STATE <img src="icon/united-states.png" alt=""></h3>
                             <img src="img/newyork.webp" alt="">
                             <div class="btn_city">
-<<<<<<< HEAD
                                 <a href="US.jsp">Read Now</a>
-=======
-                                <a href="US.html">Read Now</a>
->>>>>>> 7f8308ff5f838fa13dc27b393b297b7a67c82a09
                                 <h5>NewYork <br> <span>87k</span></h5>
                             </div>
                         </div>
@@ -81,11 +76,7 @@
                             <h3>RUSSIA <img src="icon/russia.png" alt=""></h3>
                             <img src="img/sanpitersburg.jpg" alt="">
                             <div class="btn_city">
-<<<<<<< HEAD
                                 <a href="Russia.jsp">Read Now</a>
-=======
-                                <a href="Russia.html">Read Now</a>
->>>>>>> 7f8308ff5f838fa13dc27b393b297b7a67c82a09
                                 <h5>Sanpitersburg <br> <span>66k</span></h5>
                             </div>
                         </div>
@@ -93,11 +84,7 @@
                             <h3>SPAIN <img src="icon/spain.png" alt=""></h3>
                             <img src="img/barcelona.jpg" alt="">
                             <div class="btn_city">
-<<<<<<< HEAD
                                 <a href="Spain.jsp">Read Now</a>
-=======
-                                <a href="Spain.html">Read Now</a>
->>>>>>> 7f8308ff5f838fa13dc27b393b297b7a67c82a09
                                 <h5>Barcelona <br> <span>73k</span></h5>
                             </div>
                         </div>
@@ -106,92 +93,100 @@
             </div>
         </div>
     </header>
-    <div class="offers" id="discover">
-        <h1>Best tour Package offers for You</h1>
-        <p>choose your next destination</p>
-        <div class="cards">
-            <div class="card">
-                <h3>Lotus-Dehli</h3>
-                <div class="img_text">
-                    <img src="img/lotus_temple.jpg" alt="">
-                    <h4>Inclded: Air ticket, Hotel, Breakfast, Tours, Airport Transfer</h4>
-                </div>
-                <div class="cont_bx">
-                    <div class="price">
-                        <div class="heart_chat">
-                            <i class="bi bi-heart-fill"><span>86415</span></i>
-                            <i class="bi bi-chat-fill"><span>4586</span></i>
-                        </div>
-                        <div class="info_price">
-                            <a href="">More Info</a>
-                            <h4>$2648</h4>
-                        </div>
-                    </div>
-                    <div class="dayes">5 Days <br> India</div>
-                </div>
+   <div class="offers" id="discover">
+    <h1>Best tour Package offers for You</h1>
+    <p>Choose your next destination</p>
+    <div class="cards">
+        <!-- Lotus Temple Card -->
+        <div class="card" data-link="Journey">
+            <h3>Lotus-Dehli</h3>
+            <div class="img_text">
+                <img src="img/lotus_temple.jpg" alt="Lotus Temple">
+                <h4>Included: Air ticket, Hotel, Breakfast, Tours, Airport Transfer</h4>
             </div>
-            <div class="card">
-                <h3>Burj Khalifa-DXB</h3>
-                <div class="img_text">
-                    <img src="img/burjkhlifa.jpg" alt="">
-                    <h4>Inclded: Air ticket, Hotel, Breakfast, Tours, Airport Transfer</h4>
-                </div>
-                <div class="cont_bx">
-                    <div class="price">
-                        <div class="heart_chat">
-                            <i class="bi bi-heart-fill"><span>86415</span></i>
-                            <i class="bi bi-chat-fill"><span>4586</span></i>
-                        </div>
-                        <div class="info_price">
-                            <a href="">More Info</a>
-                            <h4>$2648</h4>
-                        </div>
+            <div class="cont_bx">
+                <div class="price">
+                    <div class="heart_chat">
+                        <i class="bi bi-heart-fill"><span>86415</span></i>
+                        <i class="bi bi-chat-fill"><span>4586</span></i>
                     </div>
-                    <div class="dayes">5 Days <br> Dubai</div>
+                    <div class="info_price">
+                        <a href="Journey">More Info</a>
+                        <h4>$2648</h4>
+                    </div>
                 </div>
+                <div class="dayes">5 Days <br> India</div>
             </div>
-            <div class="card">
-                <h3>Piramids-Egypt</h3>
-                <div class="img_text">
-                    <img src="img/piramids.jpg" alt="">
-                    <h4>Inclded: Air ticket, Hotel, Breakfast, Tours, Airport Transfer</h4>
-                </div>
-                <div class="cont_bx">
-                    <div class="price">
-                        <div class="heart_chat">
-                            <i class="bi bi-heart-fill"><span>86415</span></i>
-                            <i class="bi bi-chat-fill"><span>4586</span></i>
-                        </div>
-                        <div class="info_price">
-                            <a href="">More Info</a>
-                            <h4>$2648</h4>
-                        </div>
-                    </div>
-                    <div class="dayes">7 Days <br> Egypt</div>
-                </div>
+        </div>
+
+        <!-- Burj Khalifa Card -->
+        <div class="card" data-link="Journey">
+            <h3>Burj Khalifa-DXB</h3>
+            <div class="img_text">
+                <img src="img/burjkhlifa.jpg" alt="Burj Khalifa">
+                <h4>Included: Air ticket, Hotel, Breakfast, Tours, Airport Transfer</h4>
             </div>
-            <div class="card">
-                <h3>Mountain-Vietnam</h3>
-                <div class="img_text">
-                    <img src="img/mountain.jpg" alt="">
-                    <h4>Inclded: Air ticket, Hotel, Breakfast, Tours, Airport Transfer</h4>
-                </div>
-                <div class="cont_bx">
-                    <div class="price">
-                        <div class="heart_chat">
-                            <i class="bi bi-heart-fill"><span>86415</span></i>
-                            <i class="bi bi-chat-fill"><span>4586</span></i>
-                        </div>
-                        <div class="info_price">
-                            <a href="">More Info</a>
-                            <h4>$2648</h4>
-                        </div>
+            <div class="cont_bx">
+                <div class="price">
+                    <div class="heart_chat">
+                        <i class="bi bi-heart-fill"><span>86415</span></i>
+                        <i class="bi bi-chat-fill"><span>4586</span></i>
                     </div>
-                    <div class="dayes">7 Days <br> Veitna</div>
+                    <div class="info_price">
+                        <a href="Journey">More Info</a>
+                        <h4>$2648</h4>
+                    </div>
                 </div>
+                <div class="dayes">5 Days <br> Dubai</div>
+            </div>
+        </div>
+
+        <!-- Pyramids Card -->
+        <div class="card" data-link="Journey">
+            <h3>Pyramids-Egypt</h3>
+            <div class="img_text">
+                <img src="img/piramids.jpg" alt="Pyramids">
+                <h4>Included: Air ticket, Hotel, Breakfast, Tours, Airport Transfer</h4>
+            </div>
+            <div class="cont_bx">
+                <div class="price">
+                    <div class="heart_chat">
+                        <i class="bi bi-heart-fill"><span>86415</span></i>
+                        <i class="bi bi-chat-fill"><span>4586</span></i>
+                    </div>
+                    <div class="info_price">
+                        <a href="Journey">More Info</a>
+                        <h4>$2648</h4>
+                    </div>
+                </div>
+                <div class="dayes">7 Days <br> Egypt</div>
+            </div>
+        </div>
+
+        <!-- Vietnam Card -->
+        <div class="card" data-link="Journey">
+            <h3>Mountain-Vietnam</h3>
+            <div class="img_text">
+                <img src="img/mountain.jpg" alt="Vietnam Mountains">
+                <h4>Included: Air ticket, Hotel, Breakfast, Tours, Airport Transfer</h4>
+            </div>
+            <div class="cont_bx">
+                <div class="price">
+                    <div class="heart_chat">
+                        <i class="bi bi-heart-fill"><span>86415</span></i>
+                        <i class="bi bi-chat-fill"><span>4586</span></i>
+                    </div>
+                    <div class="info_price">
+                        <a href="Journey">More Info</a>
+                        <h4>$2648</h4>
+                    </div>
+                </div>
+                <div class="dayes">7 Days <br> Vietnam</div>
             </div>
         </div>
     </div>
+</div>
+
     <div class="destination">
         <div class="des_bx">
             <h4>Our Destination</h4>
@@ -243,13 +238,13 @@
         <ul>
             <li><strong>Personalized Service</strong>: We listen to your travel preferences and craft a trip that matches your style, interests, and budget.</li>
             <li><strong>Expert Knowledge</strong>: Our team of experienced travel professionals has in-depth knowledge of destinations, hidden gems, and travel tips to ensure a seamless journey.</li>
-            <li><strong>Trustworthy & Reliable</strong>: We work with a network of trusted partners to offer you the best deals on flights, accommodations, and experiences.</li>
+            <li><strong>Trustworthy and Reliable</strong>: We work with a network of trusted partners to offer you the best deals on flights, accommodations, and experiences.</li>
             <li><strong>24/7 Support</strong>: No matter where you are, we’re always just a phone call or email away to assist you with any questions or concerns.</li>
         </ul>
     </div>    
 
     <footer>
-        <h2>Subscribe & <br> get special discount</h2>
+        <h2>Subscribe <br> get special discount</h2>
         <p>* Terms and Conditions applied. </p>
         <div class="input">
             <input type="text" placeholder="Enter your Email Address">
@@ -262,7 +257,17 @@
             <li>5658 <br> <h6>Subscribe</h6></li>
         </ul>
     </footer>
-    <script src="app.js"></script>
+   <script>
+document.querySelectorAll('.card').forEach(card => {
+    card.addEventListener('click', () => {
+        const link = card.getAttribute('data-link');
+        if (link) {
+            window.location.href = "/TravelBooking/Journey";
+        }
+    });
+});
+</script>
+
     
 </body>
 

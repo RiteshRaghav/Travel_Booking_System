@@ -1,33 +1,35 @@
 <!DOCTYPE web-app PUBLIC
  "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
- "http://java.sun.com/dtd/web-app_2_3.dtd" >
+ "http://java.sun.com/dtd/web-app_2_3.dtd">
 
 <web-app>
-	<display-name>Archetype Created Web Application</display-name>
-	
-	
-	<servlet>
-		<servlet-name>loginservlet</servlet-name>
-		<display-name>loginservlet</display-name>
-		<description></description>
-		<servlet-class>com.java.servlet.loginservlet</servlet-class>
-	</servlet>
-	
-	<servlet>
-		<servlet-name>registerServlet</servlet-name>
-		<display-name>registerServlet</display-name>
-		<description></description>
-		<servlet-class>com.java.servlet.registerServlet</servlet-class>
-	</servlet>
-	
-	
-	<servlet-mapping>
-		<servlet-name>loginservlet</servlet-name>
-		<url-pattern>/loginservlet</url-pattern>
-	</servlet-mapping>
-	
-	<servlet-mapping>
-		<servlet-name>registerServlet</servlet-name>
-		<url-pattern>/registerServlet</url-pattern>
-	</servlet-mapping>
+    <display-name>Archetype Created Web Application</display-name>
+    <servlet>
+    	<servlet-name>AmadeusAPIService</servlet-name>
+    	<display-name>AmadeusAPIService</display-name>
+    	<description></description>
+    	<servlet-class>com.java.controller.AmadeusAPIService</servlet-class>
+    </servlet>
+    <servlet>
+    	<servlet-name>FlightQuote</servlet-name>
+    	<display-name>FlightQuote</display-name>
+    	<description></description>
+    	<servlet-class>com.java.model.FlightQuote</servlet-class>
+    </servlet>
+    <servlet>
+    	<servlet-name>HotelServlet</servlet-name>
+    	<display-name>HotelServlet</display-name>
+    	<description></description>
+    	<servlet-class>com.java.controller.HotelServlet</servlet-class>
+    </servlet>
+    <servlet>
+    	<servlet-name>CabServlet</servlet-name>
+    	<display-name>CabServlet</display-name>
+    	<description></description>
+    	<servlet-class>com.java.controller.CabServlet</servlet-class>
+    </servlet>
+ 
+ 
+    
+
 </web-app>

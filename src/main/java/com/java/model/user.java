@@ -1,7 +1,6 @@
 package com.java.model;
 
 public class user {
-	private int Id;
 	private String UserName;
 	private String Email;
 	private String paswd;
